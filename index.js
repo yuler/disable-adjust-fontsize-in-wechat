@@ -1,4 +1,12 @@
-function disableAdjustFontSize() {
+;(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(factory)
+  } else if (typeof exports === 'object') {
+    module.exports = factory()
+  } else {
+    root.disableAdjustFontSize = factory()
+  }
+})(this, function disableAdjustFontSize() {
   if (typeof WeixinJSBridge === 'object' && typeof WeixinJSBridge.invoke === 'function') {
     onBridgeReady()
   } else {
@@ -16,6 +24,4 @@ function disableAdjustFontSize() {
       WeixinJSBridge.invoke('setFontSizeCallback', { fontSize: 0 })
     })
   }
-}
-
-export default disableAdjustFontSize
+})
