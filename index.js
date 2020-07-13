@@ -1,4 +1,4 @@
-export default function disableAdjustFontSize() {
+function disableAdjustFontSize() {
   if (typeof WeixinJSBridge === 'object' && typeof WeixinJSBridge.invoke === 'function') {
     onBridgeReady()
   } else {
@@ -17,3 +17,5 @@ export default function disableAdjustFontSize() {
     })
   }
 }
+
+export default disableAdjustFontSize
