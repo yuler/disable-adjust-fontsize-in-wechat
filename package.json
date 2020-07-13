@@ -1,19 +1,26 @@
 {
   "name": "disable-adjust-fontsize-in-wechat",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Disable adjust font size in wechat when browse webpage",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": "git@github.com:yuler/disable-adjust-fontsize-in-wechat.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yuler/disable-adjust-fontsize-in-wechat.git"
+  },
   "author": "yuler <joyful4yu@gmail.com>",
   "license": "MIT",
   "files": [
-		"index.js",
-		"index.d.ts"
-	],
+    "index.js",
+    "index.d.ts"
+  ],
   "keywords": [
     "WeixinJSBridge",
     "disable",
     "fontSize"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/yuler/disable-adjust-fontsize-in-wechat/issues"
+  },
+  "homepage": "https://github.com/yuler/disable-adjust-fontsize-in-wechat#readme"
 }
